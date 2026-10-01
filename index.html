@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remix — Music Bot</title>
+    <meta name="description" content="Remix is a high-performance Discord music bot.">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #080808;
+            color: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        nav {
+            width: 100%;
+            padding: 24px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #202020;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 100px 8% 70px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 14px;
+            border: 1px solid #303030;
+            border-radius: 30px;
+            color: #aaa;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(55px, 10vw, 100px);
+            letter-spacing: -5px;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            max-width: 600px;
+            margin: auto;
+            color: #999;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 70px;
+        }
+
+        .card {
+            background: #101010;
+            border: 1px solid #222;
+            border-radius: 18px;
+            padding: 30px;
+            text-align: left;
+        }
+
+        .card h2 {
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #999;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        footer {
+            border-top: 1px solid #202020;
+            padding: 30px 8%;
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                padding: 20px;
+            }
+
+            nav a {
+                margin-left: 12px;
+            }
+
+            main {
+                padding: 70px 20px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                letter-spacing: -3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">REMIX</div>
+
+    <div>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+    </div>
+</nav>
+
+<main>
+
+    <div class="badge">Discord Music Bot</div>
+
+    <h1>Remix</h1>
+
+    <p class="subtitle">
+        A fast, reliable and feature-rich music experience built for Discord.
+        Search, play, queue and control your music with a polished experience.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Music</h2>
+            <p>
+                High-quality music playback with queue management,
+                playback controls, search, playlists and more.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Reliable</h2>
+            <p>
+                Built with reliability in mind, including player recovery,
+                connection handling and resilient music sessions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Interactive</h2>
+            <p>
+                Modern controls, buttons, menus and player interfaces
+                designed to make music management simple.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Privacy</h2>
+            <p>
+                Remix is designed to minimise the information required
+                to provide its features.
+            </p>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 Remix. All rights reserved.</p>
+
+    <div style="margin-top: 12px;">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </div>
+</footer>
+
+</body>
+</html>
